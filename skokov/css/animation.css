@@ -1,0 +1,46 @@
+.ham-menu:hover .line-one{
+    animation-name: firstLine;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.ham-menu:hover .line-two{
+    animation-name: secondLine;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ham-menu:hover .line-three{
+    animation-name: thirdLine;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes firstLine{
+    0%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes secondLine{
+    0%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes thirdLine{
+    0%{
+        transform: translateX(15px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
