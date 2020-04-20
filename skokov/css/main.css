@@ -211,14 +211,14 @@ nav .logo h2{
 
 
 /**************service*****/
-.service{
+.section{
     color: black;
     text-align: center;
     margin-top: 30px;
     padding: 0 30px;
 }
 .heading{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 900;
     color: rgb(26, 24, 24);
@@ -282,10 +282,206 @@ nav .logo h2{
 }
 
 
+/******************** contact ********************/
+.contact{
+    width: 100%;
+    height: 50vh;
+    padding: 0 30px;
+    background: linear-gradient(rgba(143, 88, 88, 0.8), rgba(0, 0, 0, 0.8)), url(../img/contact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+.contact-content{
+    width: 100%;
+}
+.contact-content h3{
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+/****************** about us *********************/
+.about-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.line-heading{
+    color: #FD5052;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 900;
+    position: relative;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+.line-heading::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    display: inline-block;
+    background-color: #FD5052;
+}
+.work p{
+    text-align: left;
+    color: rgba(31, 29, 29, 0.897);
+    font-weight: 500;
+}
+.clients{
+    margin-top: 20px;
+
+}
+.clients-grp{
+    width: 100%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+.client{
+    box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.teams{
+    margin-top: 20px;
+
+}
+.teams-grp{
+    width: 100%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 1px;
+}
+.team{
+    box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.team img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(253, 80, 83, 0.815);
+    z-index: 555;
+    text-align: left;
+    transform: scaleY(0);
+    transition: 300ms;
+}
+.team:hover .info{
+    display: flex;
+    padding: 30px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    transform: scaleY(1);
+}
+.info h3{
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+
+}
+.info h5{
+    color: white;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 25px;
+
+}
+.info p{
+    color: white;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+
+}
+.info hr{
+    border: 0.3px solid rgba(0, 0, 0, 0.5);
+}
 
 
+/******************** video ******************/
+.video{
+    width: 100%;
+    height: 40vh;
+    padding: 0 30px;
+    background: linear-gradient(rgba(143, 88, 88, 0.8), rgba(0, 0, 0, 0.8)), url(../img/video-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+}
+.video-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.play-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FD5052;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.inner-play-btn{
+    width: 20px;
+    height: 20px;
+    background: white;
+    clip-path: polygon(0 0, 0 100%, 100% 49%);
+    border-radius: 2px;
+    
+}
+.video-content h3{
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.video-content p{
+    font-size: 0.7rem;
+    line-height: 18px;
+}
 
 /*********************************************************
 *                      Responsive                        *
@@ -364,10 +560,28 @@ nav .logo h2{
         transform-origin: right;
 
     }
+    .des li a::after{
+        content: '';
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        top: -32px;
+        height: 4px;
+        background: rgba(243, 38, 42, 0.925);
+        display: inline-block;
+        transform: scaleX(0);
+        transition: 300ms;
+        transform-origin: left;
+}
+    .des li:hover a::after{
+        transform: scaleX(1);
+        transform-origin: right;
+
+    }
    nav{
        padding: 0 60px;
    }
-   .service{
+   .section{
        padding: 0 60px;
    }
    .service-list{
@@ -375,9 +589,55 @@ nav .logo h2{
        grid-area: 20px;
        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
    }
-   
+   .contact{
+       padding: 0 60px;
+   }
+   .contact-content{
+        width: 100%;
+        font-size: 1.2rem;
+   }
+    .contact-content h3{
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+    .about-section{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto;
+        grid-gap: 40px;
+        grid-template-areas: "w w w w w w r c c c c c" "t t t t t t t t t t t t";
+    }
+    .about-section .work{
+        grid-area: w;
+    }
+    .about-section .teams{
+        grid-area: t;
+    }
+    .about-section .clients{
+        grid-area: c;
+    }
+    .clients{
+        margin-top: 0px;
 
-  }
+    }
+    .work p{
+        line-height: 20px;
+    }
+    .teams-grp{
+        grid-gap: 4px;
+    }
+    .video-content h3{
+        font-size: 1.7rem;
+    }
+    .video-content p{
+        font-size: 0.75rem;
+        line-height: 18px;
+        width: 70%;
+    }
+}
+    
+
+
 
 
 
@@ -397,7 +657,7 @@ nav .logo h2{
    nav{
        padding: 0 80px;
    }
-   .service{
+   .section{
        padding: 0 100px;
    }
    .service .para{
@@ -409,4 +669,14 @@ nav .logo h2{
        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
 
    }
+   .contact{
+       padding: 0 80px;
+   }
+   .contact-content{
+        width: 70%;
+        font-size: 1.3rem;
+    }
+    .clients-grp{
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
   }
