@@ -1,8 +1,11 @@
 const mob = document.getElementById('mob')
 const body = document.getElementById('body')
+const video = document.getElementById('main-videos')
+
 
 
 var isNavOpen = false
+isVideoOpen = false
 
 
 const openMobNav = () =>{
@@ -20,7 +23,18 @@ const openMobNav = () =>{
     }
 }
 
-
+const toggleVideo = () =>{
+  if(!isVideoOpen){
+    video.style.display='flex'
+    body.style.overflowY='hidden'
+    isVideoOpen = true
+  }
+  else{
+    video.style.display='none'
+    body.style.overflowY='scroll'
+    isVideoOpen = false
+  }
+}
 
 var navbar = document.querySelector('nav')
 
