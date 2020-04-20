@@ -354,7 +354,7 @@ nav .logo h2{
     grid-gap: 10px;
 }
 .client{
-    box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0.4px 0.4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .teams{
@@ -365,7 +365,7 @@ nav .logo h2{
     width: 100%;
     margin-bottom: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     grid-gap: 1px;
 }
 .team{
@@ -432,7 +432,7 @@ nav .logo h2{
 /******************** video ******************/
 .video{
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     padding: 0 30px;
     background: linear-gradient(rgba(143, 88, 88, 0.8), rgba(0, 0, 0, 0.8)), url(../img/video-bg);
     background-position: center;
@@ -473,14 +473,14 @@ nav .logo h2{
 }
 .video-content h3{
     margin-bottom: 10px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 900;
     line-height: 2rem;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
 }
 .video-content p{
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     line-height: 18px;
 }
 
@@ -625,7 +625,8 @@ nav .logo h2{
         line-height: 20px;
     }
     .teams-grp{
-        grid-gap: 4px;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-gap: 3px;
     }
     .video-content h3{
         font-size: 1.7rem;
@@ -634,6 +635,14 @@ nav .logo h2{
         font-size: 0.75rem;
         line-height: 18px;
         width: 70%;
+    }
+    .video-content h3{
+        font-size: 1.6rem;
+        font-weight: 900;
+
+    }
+    .video-content p{
+        font-size: 0.7rem;
     }
 }
     
